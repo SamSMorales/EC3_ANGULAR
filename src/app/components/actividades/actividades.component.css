@@ -1,0 +1,216 @@
+@use postcss-preset-env;
+
+@font-face {
+    font-family: 'Sucrose Bold Two';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+}
+
+@import url(https://weloveiconfonts.com/api/?family=fontawesome);
+
+*[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #f9f9f9;
+	color: #0e171c;
+  display: grid;
+	font: 300 100%/1.5em 'Lato', sans-serif;
+	margin: 0;
+  min-height: 100vh;
+  place-items: center;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Sucrose Bold Two';
+    padding: 2rem 2rem;
+}
+
+h2 {
+	font-size: 2em;
+	line-height: 1.25em;
+	margin: .25em 0;
+}
+
+h3 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin: .33em 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+	width: 1000px;
+    margin-left: 19rem;
+}
+
+/* ---------- CALENDAR ---------- */
+
+.calendar {
+	text-align: center;
+}
+
+.calendar header {
+	position: relative;
+}
+
+.calendar h2 {
+	text-transform: uppercase;
+}
+
+.calendar thead {
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.calendar tbody {
+	color: #7c8a95;
+}
+
+.calendar tbody td:hover {
+	border: 2px solid #00addf;
+}
+
+.calendar td {
+	border: 2px solid transparent;
+	border-radius: 50%;
+	display: inline-block;
+	height: 4.5em;
+    width: 5rem;
+	line-height: 4em;
+	text-align: center;
+	width: 4em;
+    margin-left: 4.5rem;
+}
+
+.calendar .prev-month,
+.calendar .next-month {
+	color: #cbd1d2;
+}
+
+.calendar .prev-month:hover,
+.calendar .next-month:hover {
+	border: 2px solid #cbd1d2;
+}
+
+.current-day {
+	background: #00addf;
+	color: #f9f9f9;
+}
+
+.event {
+	cursor: pointer;
+	position: relative;
+}
+
+.event:after {
+	background: #00addf;
+	border-radius: 50%;
+	bottom: .5em;
+	display: block;
+	content: '';
+	height: .5em;
+	left: 50%;
+	margin: -.25em 0 0 -.25em;
+	position: absolute;
+	width: .5em;
+}
+
+.event.current-day:after {
+	background: #f9f9f9;
+}
+
+.btn-prev,
+.btn-next {
+	border: 2px solid #cbd1d2;
+	border-radius: 50%;
+	color: #cbd1d2;
+	height: 2em;
+	font-size: .75em;
+	line-height: 2em;
+	margin: -1em;
+	position: absolute;
+	top: 50%;
+	width: 2em;
+}
+
+.btn-prev:hover,
+.btn-next:hover {
+	background: #cbd1d2;
+	color: #f9f9f9;
+}
+
+.btn-prev {
+	left: 6em;
+}
+
+.btn-next {
+	right: 6em;
+}
+
+@media only screen and (max-width:980px){
+	.container{
+		width: 95%;
+		margin-left: 1rem;
+	}
+
+	.calendar{
+		width: 95%;
+	}
+
+	.calendar thead{
+		width: 100%;
+		font-weight: 500;
+		line-height: 1rem;
+	}
+
+	.calendar td{
+		margin-left: 3.5rem;
+	}
+}
+
+@media only screen and (max-width:580px) {
+	h1{
+		font-size: 2rem;
+		line-height: 4rem;
+	}
+
+	.calendar thead{
+		width: 100%;
+		font-weight: 500;
+		line-height: 1.5rem;
+	}
+
+	.calendar td{
+		margin-left: 1rem;
+	}
+}
+
+@media only screen and (max-width:480px){
+	h1{
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+
+	.calendar thead{
+		width: 100%;
+		font-weight: 500;
+		line-height: 1rem;
+	}
+
+	.calendar td{
+		margin-left: 0.2rem;
+	}
+}

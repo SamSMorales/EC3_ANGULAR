@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Sucrose Bold Two';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    position: relative;
+    background: url(../../../assets/img/banner-arma.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedor-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+.contenedor-banner h1{
+    font-family: 'Sucrose Bold Two';
+    line-height: 6rem;
+    font-size: 7rem;
+}
+
+.contenedor-banner p{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.overlay{
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.mat-tab-group {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+.t{
+    padding: 1rem 0rem;
+}
+
+@media only screen and (max-width:980px){
+    .contenedor-banner h1{
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width:580px) {
+    .contenedor-banner h1{
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .contenedor-banner h1{
+        font-size: 3rem;
+    }
+}

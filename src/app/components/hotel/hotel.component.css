@@ -1,0 +1,99 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    position: relative;
+    background: url(../../../assets/img/banner-vuelos.jpg);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.contenedor-banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: aliceblue;
+}
+
+.contenedor-banner h1{
+    font-family: 'Sucrose Bold Two';
+    line-height: 6rem;
+    font-size: 7rem;
+}
+
+.contenedor-banner p{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.overlay{
+    background: rgb(0, 0, 0, 0.5);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.example-small-box, .example-large-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px;
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .example-large-box {
+    height: 300px;
+    width: 100%;
+  }
+
+.cr{
+    border: none;
+    max-width: 600px;
+    width: 100%;
+    padding: 10px;
+}
+.boton{
+    width: 100%;
+}
+
+@media only screen and (max-width:980px){
+    .mat-card-title{
+        line-height: 1rem;
+    }
+}
+@media only screen and (max-width:580px) {
+    .contenedor-banner h1{
+        font-size: 4rem;
+    }
+
+    .cr{
+        margin-right: 1rem;
+        width: 98%;
+    }
+    .example-large-box{
+        margin-left: 0rem;
+    }
+}
+
+@media only screen and (max-width:480px){
+    .contenedor-banner h1{
+        font-size: 3rem;
+    }
+
+    .cr{
+        margin-right: 1rem;
+        width: 98%;
+    }
+    .example-large-box{
+        margin-left: 0rem;
+    }
+}

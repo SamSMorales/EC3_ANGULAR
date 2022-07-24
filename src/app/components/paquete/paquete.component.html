@@ -1,0 +1,55 @@
+
+<div class="banner">
+    <div class="overlay">
+        <div class="contenedor-banner">
+            <h1>Desctubre los mejores paquetes que tenemos para ti</h1>
+        </div>
+    </div>
+</div>
+
+<h3>LO MAS SOLICITADO</h3>
+
+  <mat-grid-list cols="2" rowHeight="2:1" class="galeria">
+    <mat-grid-tile><img src="../../../assets/img/p1.jpg" alt=""></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/img/bogotaAVIANCA.jpg" alt=""></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/img/citavirtual660x220.jpg" alt=""></mat-grid-tile>
+    <mat-grid-tile><img src="../../../assets/img/redescubrePeru650x220.jpg" alt=""></mat-grid-tile>
+  </mat-grid-list>
+
+<h3>Registrate y obten los mejores beneficios</h3>
+
+  <mat-stepper headerPosition="bottom" #stepper class="form">
+    <mat-step>
+      <form>
+        <ng-template matStepLabel>Nombre Completo</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="Nombre" formControlName="firstCtrl" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperNext>Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step optional>
+      <form>
+        <ng-template matStepLabel>Direccion</ng-template>
+        <mat-form-field>
+          <input matInput placeholder="Direccion" formControlName="secondCtrl" required>
+        </mat-form-field>
+        <div>
+          <button mat-button matStepperPrevious>Anterior</button>
+          <button mat-button matStepperNext>Siguiente</button>
+        </div>
+      </form>
+    </mat-step>
+    <mat-step>
+      <ng-template matStepLabel>Terminar</ng-template>
+      Ya has terminado
+      <div>
+        <button mat-button matStepperPrevious>Atras</button>
+        <button mat-button (click)="stepper.reset()">Restablecer</button>
+      </div>
+    </mat-step>
+  </mat-stepper>
+  
+  

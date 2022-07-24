@@ -1,0 +1,39 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+header{
+    background: rgba(39, 39, 163, 0.605);
+    padding: 20px;
+    box-shadow: 0px 5px 17px rgba(111, 111, 111, 0.92); 
+}
+
+a{
+    display: inline-block;
+    padding: 10px;
+    margin: 0px auto;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 45px;
+    color: #000;
+}
+
+a:hover{
+    color: orangered;
+}
+
+span{
+    color: wheat;
+    font-size: 30px;
+}
+
+.container_principal{
+    margin-top: 10px;
+    margin-left: 10px;
+}

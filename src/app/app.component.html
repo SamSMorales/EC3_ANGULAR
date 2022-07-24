@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oferta de Viajes</title>
+  <link rel="shortcut icon" href="../assets/img/favicon.jpg" type="image/x-icon">
+</head>
+<body>
+<header>
+        <a href="" id="Logo"><span><img src="../assets/img/Logo_modal.png" alt=""></span></a>
+
+        <a mat-button [routerLink]="['vuelos']" >Vuelos</a>
+
+        <a mat-button [routerLink]="['paquete']" >Paquete</a> 
+
+        <a mat-button [routerLink]="['viaje']" >Recomendaciones</a>
+
+        <a mat-button [routerLink]="['hotel']" >Vuelos + Hotel</a>
+
+        <a mat-button [routerLink]="['hoteles']" >Hoteles</a>
+
+        <a mat-button [routerLink]="['autos']" >Autos</a>
+
+        <a mat-button [routerLink]="['actividades']" >Actividades</a>
+
+        <a mat-button [routerLink]="['seguro']" >Ubicación</a>
+
+        <a mat-button [routerLink]="['login']" ><i class="fa-solid fa-user"></i></a>
+
+</header>
+<div class="container_principal">
+  <router-outlet>
+
+  </router-outlet>
+</div>
+<div class="fondo-footer">
+  <div class="footer">
+      <footer>
+          <h3>NMVIAJES</h3>
+          <ul class="auspiciadores">
+            <li>Inicio</li>
+            <li>Estado de Vuelo </li>
+            <li>Destinos</li>
+            <li>Centro de Ayuda</li>
+        </ul>
+      </footer>
+      <footer>
+          <h3>Informacion Legal</h3>
+          <ul class="auspiciadores">
+              <li>Condiciones de contrato de transporte</li>
+              <li>Cargos por Servicio </li>
+              <li>Terminos de Uso</li>
+              <li>Endoso y postergados</li>
+          </ul>
+      </footer>
+      <footer >
+          <h3>Contacta con nosotros</h3>
+          <div class="social">
+              <label class="ico fa-brands fa-facebook"></label>
+              <label class="ico fa-brands fa-twitter"></label>
+              <label class="ico fa-brands fa-youtube"></label>
+          </div>
+      </footer>
+  </div>
+</div>
+<div class="fondo-pies">
+<div class="pies">
+  <div class="pie">
+      <p>Derechos Reservados &copy;</p>
+  </div>
+  <div class="pie">
+      <p>Agencia nmViajes 2022</p>
+  </div>
+</div>
+</div>
+</body>
+</html>
